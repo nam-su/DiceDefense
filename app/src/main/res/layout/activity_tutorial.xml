@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Tutorial">
+
+    <ImageView
+        android:id="@+id/iv_blueDice"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_dice_" />
+
+    <ImageView
+        android:id="@+id/iv_redDice"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_blueDice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/red_dice_" />
+
+    <ImageView
+        android:id="@+id/iv_yellowDice"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_blueDice"
+        app:srcCompat="@drawable/yellow_dice_" />
+
+    <TextView
+        android:id="@+id/tv_explanationRedDice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="        불 주사위 \n\n강한 공격을 합니다."
+        app:layout_constraintBottom_toBottomOf="@+id/iv_redDice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_redDice"
+        app:layout_constraintTop_toTopOf="@+id/iv_redDice" />
+
+    <TextView
+        android:id="@+id/tv_explanationBlueDice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="            물 주사위 \n\n빠른 속도로 공격합니다."
+        app:layout_constraintBottom_toBottomOf="@+id/iv_blueDice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_blueDice"
+        app:layout_constraintTop_toTopOf="@id/iv_blueDice"/>
+
+    <TextView
+        android:id="@+id/tv_explanationYellowDice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="       전기 주사위 \n\n전체 공격을 합니다."
+        app:layout_constraintBottom_toBottomOf="@+id/iv_yellowDice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_yellowDice"
+        app:layout_constraintTop_toBottomOf="@+id/iv_blueDice" />
+
+    <TextView
+        android:id="@+id/tv_explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rule"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_redDice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_checkTutorial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <ImageView
+        android:id="@+id/iv_explanation1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_explanation"
+        app:layout_constraintEnd_toStartOf="@+id/tv_explanation"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_explanation"
+        app:srcCompat="@drawable/explanation" />
+
+    <ImageView
+        android:id="@+id/iv_explanation2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_explanation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_explanation"
+        app:layout_constraintTop_toTopOf="@+id/tv_explanation"
+        app:srcCompat="@drawable/explanation" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주사위 타워는 1~6 눈금 중 랜덤으로 생성되며\n   판매도 설치된 타워중 랜덤으로 판매됩니다."
+        app:layout_constraintBottom_toTopOf="@+id/btn_checkTutorial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_yellowDice"
+        app:layout_constraintVertical_bias="0.525" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주어진 골드로 타워를 설치해 적들을 물리쳐라!"
+        app:layout_constraintBottom_toTopOf="@+id/iv_redDice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_explanation" />
+</androidx.constraintlayout.widget.ConstraintLayout>
